@@ -152,10 +152,10 @@
 
     <TextView
         android:id="@+id/register"
-        android:layout_width="70dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="184dp"
+        android:layout_width="72dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="188dp"
         android:background="@android:color/transparent"
         android:fontFamily="@font/poppins_bold"
         android:padding="0dp"
@@ -163,7 +163,7 @@
         android:textColor="#40BFFF"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="@+id/btn_signIn"
-        app:layout_constraintHorizontal_bias="0.749"
+        app:layout_constraintHorizontal_bias="0.712"
         app:layout_constraintStart_toStartOf="@+id/btn_signIn"
         app:layout_constraintTop_toBottomOf="@id/btn_signIn" />
 
@@ -171,12 +171,12 @@
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="184dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="188dp"
         android:text="Don`t have a account?"
         android:textColor="#9098B1"
+
         android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/register"
-        app:layout_constraintHorizontal_bias="0.804"
         app:layout_constraintStart_toStartOf="@+id/btn_signIn"
         app:layout_constraintTop_toBottomOf="@id/btn_signIn" />
 

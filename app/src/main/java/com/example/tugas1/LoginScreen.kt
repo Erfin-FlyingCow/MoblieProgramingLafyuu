@@ -3,6 +3,7 @@ package com.example.tugas1
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,15 +20,27 @@ class LoginScreen : AppCompatActivity() {
             insets
         }
 
-        val register = findViewById<Button>(R.id.register)
+        val register = findViewById<TextView>(R.id.register)
         register.setOnClickListener(){
             toRegisterScreen()
+        }
+
+        val signIn = findViewById<Button>(R.id.btn_signIn)
+        signIn.setOnClickListener(){
+            toHomeScreen()
         }
 
     }
 
     fun toRegisterScreen() {
         Intent(this,RegisterScreen::class.java).also {
+            startActivity(it)
+            finish()
+        }
+    }
+
+    fun toHomeScreen() {
+        Intent(this,Home::class.java).also {
             startActivity(it)
             finish()
         }

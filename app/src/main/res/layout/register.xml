@@ -160,9 +160,8 @@
         android:id="@+id/login"
         android:layout_width="50dp"
         android:layout_height="25dp"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="91dp"
+        android:layout_marginTop="28dp"
+
         android:background="@android:color/transparent"
         android:fontFamily="@font/poppins_bold"
         android:padding="0dp"
@@ -171,19 +170,19 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
 
-        app:layout_constraintHorizontal_bias="0.341"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@id/btn_register" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="28dp"
         android:text="Have a account?"
-        android:textColor="#9098B1"
 
+        android:textColor="#9098B1"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_register" />
