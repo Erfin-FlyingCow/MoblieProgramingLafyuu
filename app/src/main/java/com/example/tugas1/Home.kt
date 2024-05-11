@@ -18,10 +18,22 @@ class Home : AppCompatActivity() {
         flashSale.setOnClickListener(){
         goToOffer()
         }
+
+        val btnfavorite = findViewById<ImageView>(R.id.bfavorite)
+        btnfavorite.setOnClickListener(){
+            goToFavorite()
+        }
     }
 
     fun goToOffer() {
         Intent(this,Offer::class.java).also {
+            startActivity(it)
+            finish()
+        }
+    }
+
+    fun goToFavorite(){
+        Intent(this,Favorite::class.java).also {
             startActivity(it)
             finish()
         }
