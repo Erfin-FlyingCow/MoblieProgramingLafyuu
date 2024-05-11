@@ -140,6 +140,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="35dp"
                 android:orientation="vertical"
+                android:gravity="center"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView2">
@@ -367,6 +368,92 @@
                 app:layout_constraintHorizontal_bias="0.516"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridlayout"
+                android:columnCount="2">
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="207dp"
+                    android:padding="5dp"
+                    android:src="@drawable/gv1" />
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="207dp"
+                    android:padding="5dp"
+                    android:src="@drawable/gv2" />
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="207dp"
+                    android:padding="5dp"
+                    android:src="@drawable/gv3" />
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="207dp"
+                    android:padding="5dp"
+                    android:src="@drawable/gv4" />
+
+
+
+            </GridLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="112dp"
+                        android:padding="5dp"
+                        android:src="@drawable/home" />
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="112dp"
+                        android:padding="5dp"
+                        android:src="@drawable/explore"/>
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="112dp"
+                        android:padding="5dp"
+                        android:src="@drawable/cart" />
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="112dp"
+                        android:padding="5dp"
+                        android:src="@drawable/offer" />
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="112dp"
+                        android:padding="5dp"
+                        android:src="@drawable/account" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
         </LinearLayout>
     </ScrollView>
 
