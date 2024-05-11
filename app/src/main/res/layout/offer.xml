@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Offer"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backhome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:src="@drawable/panah_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableEnd="@drawable/search"
+            android:drawableTint="#9098B1"
+            android:gravity="center_vertical"
+            android:text="Super Flash Sale"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/recomended"
+        android:layout_width="wrap_content"
+        android:layout_height="223dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/flashsale"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridlayout"
+        android:columnCount="2">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="207dp"
+            android:padding="5dp"
+            android:src="@drawable/of1" />
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="207dp"
+            android:padding="5dp"
+            android:src="@drawable/of2" />
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="207dp"
+            android:padding="5dp"
+            android:src="@drawable/of3" />
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="207dp"
+            android:padding="5dp"
+            android:src="@drawable/of4" />
+
+
+
+    </GridLayout>
+
+</LinearLayout>

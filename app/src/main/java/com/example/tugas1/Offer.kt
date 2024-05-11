@@ -8,20 +8,19 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Home : AppCompatActivity() {
+class Offer : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.home)
+        setContentView(R.layout.offer)
 
-        val flashSale = findViewById<ImageView>(R.id.superFlasesale)
-        flashSale.setOnClickListener(){
-        goToOffer()
+        val back = findViewById<ImageView>(R.id.backhome)
+        back.setOnClickListener(){
+            toHomeScreen()
         }
     }
-
-    fun goToOffer() {
-        Intent(this,Offer::class.java).also {
+    fun toHomeScreen() {
+        Intent(this, Home::class.java).also {
             startActivity(it)
             finish()
         }
