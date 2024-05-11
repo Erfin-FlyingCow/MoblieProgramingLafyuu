@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:layout_margin="20dp"
     android:layout_gravity="fill_vertical"
-    tools:context=".ProductDetail">
+    tools:context=".ProductDetail"
+    android:scrollbars="none">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -66,7 +67,8 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
 
                 <ImageView
                     android:layout_width="48dp"
@@ -119,6 +121,8 @@
             android:layout_height="wrap_content"
             android:text="Select Color"
             android:textStyle="bold" />
+
+
         <HorizontalScrollView
             android:layout_marginTop="15dp"
             android:layout_width="match_parent"
@@ -126,7 +130,8 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
 
                 <ImageView
                     android:layout_width="48dp"
@@ -172,5 +177,62 @@
 
             </LinearLayout>
         </HorizontalScrollView>
+
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:src="@drawable/specification"/>
+
+
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You Might Also Like"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:id="@+id/flashsalescroll">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="207dp"
+                    android:padding="5dp"
+                    android:src="@drawable/fsp1" />
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="207dp"
+                    android:padding="5dp"
+                    android:src="@drawable/fsp2" />
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="207dp"
+                    android:padding="5dp"
+                    android:src="@drawable/fsp3" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            app:cornerRadius="5dp"
+            android:text="Add To Cart"
+            android:backgroundTint="#40BFFF"/>
     </LinearLayout>
 </ScrollView>

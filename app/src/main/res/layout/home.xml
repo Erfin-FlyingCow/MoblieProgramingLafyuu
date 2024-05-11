@@ -292,6 +292,7 @@
                             android:src="@drawable/fsp2" />
 
                         <ImageView
+                            android:id="@+id/nikeairproduct"
                             android:layout_width="170dp"
                             android:layout_height="207dp"
                             android:padding="5dp"

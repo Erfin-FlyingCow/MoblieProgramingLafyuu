@@ -23,6 +23,11 @@ class Home : AppCompatActivity() {
         btnfavorite.setOnClickListener(){
             goToFavorite()
         }
+
+        val nikeairbtn = findViewById<ImageView>(R.id.nikeairproduct)
+        nikeairbtn.setOnClickListener(){
+            goToDetailNikeAir()
+        }
     }
 
     fun goToOffer() {
@@ -34,6 +39,13 @@ class Home : AppCompatActivity() {
 
     fun goToFavorite(){
         Intent(this,Favorite::class.java).also {
+            startActivity(it)
+            finish()
+        }
+    }
+
+    fun goToDetailNikeAir(){
+        Intent(this,ProductDetail::class.java).also {
             startActivity(it)
             finish()
         }
