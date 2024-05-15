@@ -2,13 +2,20 @@ package com.example.tugas1
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.PersistableBundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.GridView
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
-class Home : AppCompatActivity() {
+class Home : AppCompatActivity(), AdapterView.OnItemClickListener {
+
+    private var gridView:GridView ? = null
+    private  var arrayList:ArrayList<productitem>? = null
+    private var productadapter:productadapter? =null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -28,6 +35,8 @@ class Home : AppCompatActivity() {
         nikeairbtn.setOnClickListener(){
             goToDetailNikeAir()
         }
+
+        showGridview()
     }
 
     fun goToOffer() {
@@ -50,4 +59,31 @@ class Home : AppCompatActivity() {
             finish()
         }
     }
+
+    fun showGridview() {
+        gridView =findViewById(R.id.my_gridview)
+        arrayList=ArrayList()
+        arrayList=setDataList()
+        productadapter = productadapter(applicationContext, arrayList!!)
+        gridView?.adapter=productadapter
+        gridView?.onItemClickListener = this
+
+    }
+
+    override fun onItemClick(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+        var productitem:productitem = arrayList!!.get(position)
+    }
+
+
+    private fun setDataList(): ArrayList<productitem> {
+        var arrayList: ArrayList<productitem> = ArrayList()
+        arrayList.add(productitem(R.drawable.gv1))
+        arrayList.add(productitem(R.drawable.gv2))
+        arrayList.add(productitem(R.drawable.gv3))
+        arrayList.add(productitem(R.drawable.gv4))
+
+        return arrayList
+    }
+
+
 }
