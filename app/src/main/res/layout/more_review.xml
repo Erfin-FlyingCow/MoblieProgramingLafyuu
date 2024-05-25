@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
     android:layout_margin="20dp"
+    android:layout_marginBottom="50dp"
     android:scrollbars="none"
     tools:context=".MoreReview">
 
@@ -89,6 +90,7 @@
             android:id="@+id/btnWritereview"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
             app:cornerRadius="5dp"
             android:text="Write Review"
             android:backgroundTint="#40BFFF"/>
