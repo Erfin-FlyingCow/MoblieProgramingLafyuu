@@ -28,6 +28,11 @@ class Home : AppCompatActivity() {
         nikeairbtn.setOnClickListener(){
             goToDetailNikeAir()
         }
+
+        val notif = findViewById<ImageView>(R.id.notif)
+        notif.setOnClickListener(){
+            goToNotif()
+        }
     }
 
     fun goToOffer() {
@@ -46,6 +51,13 @@ class Home : AppCompatActivity() {
 
     fun goToDetailNikeAir(){
         Intent(this,ProductDetail::class.java).also {
+            startActivity(it)
+            finish()
+        }
+    }
+
+   public fun goToNotif(){
+        Intent(this,Notification::class.java).also {
             startActivity(it)
             finish()
         }
