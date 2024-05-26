@@ -20,10 +20,21 @@ class Notification : AppCompatActivity() {
         }
 
         val offer = findViewById<ImageView>(R.id.offer)
-        offer.setOnClickListener(){
+        offer.setOnClickListener() {
             toOffer()
         }
+
+        val feed = findViewById<ImageView>(R.id.feed)
+        feed.setOnClickListener() {
+            toFeed()
+        }
+
+        val activity = findViewById<ImageView>(R.id.activity)
+        activity.setOnClickListener() {
+            toActivity()
+        }
     }
+
 
     fun toHomeScreen() {
         Intent(this, Home::class.java).also {
@@ -34,6 +45,20 @@ class Notification : AppCompatActivity() {
 
     fun toOffer(){
         Intent(this, NotificationOffer::class.java).also {
+            startActivity(it)
+            finish()
+        }
+    }
+
+    fun toFeed(){
+        Intent(this, NotifFeed::class.java).also {
+            startActivity(it)
+            finish()
+        }
+    }
+
+    fun toActivity(){
+        Intent(this, NotifActivity::class.java).also {
             startActivity(it)
             finish()
         }

@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:orientation="vertical"
-    android:layout_margin="20dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Notification">
-
+    tools:context=".NotifActivity">
 
     <LinearLayout
+        app:layout_constraintTop_toBottomOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -31,24 +31,27 @@
             android:text="Notification"
             android:textColor="#000000"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="-16dp" />
+
+
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/offer"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:src="@drawable/notif1"/>
+        android:layout_height="150dp"
+        android:src="@drawable/notifactivity1"/>
 
     <ImageView
-        android:id="@+id/feed"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:src="@drawable/notif2"/>
+        android:layout_height="150dp"
+        android:src="@drawable/notifactivity2"/>
 
     <ImageView
-        android:id="@+id/activity"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:src="@drawable/notif3"/>
+        android:layout_height="150dp"
+        android:src="@drawable/notifacitivity3"/>
+
+
 </LinearLayout>
