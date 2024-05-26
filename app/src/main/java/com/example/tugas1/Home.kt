@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.textfield.TextInputEditText
 
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +34,17 @@ class Home : AppCompatActivity() {
         notif.setOnClickListener(){
             goToNotif()
         }
+
+        val explore = findViewById<ImageView>(R.id.explore)
+        explore.setOnClickListener(){
+            goToExplore()
+        }
+
+
     }
+
+
+
 
     fun goToOffer() {
         Intent(this,Offer::class.java).also {
@@ -55,11 +66,18 @@ class Home : AppCompatActivity() {
             finish()
         }
     }
-
-   public fun goToNotif(){
+    fun goToNotif(){
         Intent(this,Notification::class.java).also {
             startActivity(it)
             finish()
         }
     }
+
+    fun goToExplore(){
+        Intent(this, Explore::class.java).also {
+            startActivity(it)
+            finish()
+        }
+    }
+
 }
